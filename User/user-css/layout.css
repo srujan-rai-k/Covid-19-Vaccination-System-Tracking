@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+@import url("fontawesome-free/css/fontawesome-all.min.css");
+@import url("framework.css");
+
+/* Rows
+--------------------------------------------------------------------------------------------------------------- */
+.row1{border-bottom:2px solid;}
+
+
+/* Page Intro
+--------------------------------------------------------------------------------------------------------------- */
+#pageintro{padding:180px 0;}
+
+#pageintro article{display:inline-block; max-width:75%;}
+#pageintro .heading{margin-bottom:20px; font-size:4rem;}
+#pageintro footer{margin-top:50px;}
+
+
+/* Content Area
+--------------------------------------------------------------------------------------------------------------- */
+.container{padding:80px 0;}
+
+/* Content */
+
+
+.sectiontitle{display:block; max-width:55%; margin:0 auto 80px; text-align:center;}
+.sectiontitle *{margin:0;}
+
+/* Prices */
+
+.prices li{margin-bottom:50px;}/* Default 30px, but must compensate for the 20px negative footer margin */
+.prices li:nth-last-child(-n+3){margin-bottom:0;}/* Removes bottom margin from the last three items - margin is restored in the media queries when items stack */
+.prices li:nth-child(3n+1){margin-left:0; clear:left;}/* Removes the need to add class="first" */
+.prices li article{display:block; position:relative; padding:40px 25px; border:1px solid; text-align:center;}/* Uses the one_third width in pixels */
+.prices li article *{margin:0 0 30px 0;}
+.prices li article i{display:inline-block; font-size:80px;}
+.prices li article .heading{text-transform:uppercase;}
+
+.prices li article p:last-of-type{display:inline-block; position:relative; padding-left:18px; font-weight:400;}
+.prices li article p:last-of-type *{margin:0; line-height:1;}
+.prices li article p:last-of-type sup{position:absolute; top:3px; left:0; font-size:1.2rem;}
+.prices li article p:last-of-type strong{margin-right:5px; font-size:50px;}
+.prices li article p:last-of-type em{font-style:normal;}
+.prices li article footer{margin:0 0 -60px 0; padding:0;}
+.prices li article footer a{margin-bottom:0;}
+
+/* Testimonial */
+.testimonial article{max-width:65%; margin:0 auto; text-align:center;}
+.testimonial article *{margin:0; padding:0;}
+.testimonial article blockquote{margin-bottom:20px;}
+
+.testimonial article em{display:block; margin-top:-5px; font-size:.8rem; font-style:normal;}
+
+
+
+.cta{padding:50px 0;}
+.cta > :first-child{margin-top:10px;}
+.cta > :last-child{margin-bottom:0;}/* Used when elements stack in smaller viewports */
+
+
+/* CTA - Click to Action
+--------------------------------------------------------------------------------------------------------------- */
+#cta{border-top:1px solid;}
+
+
+#cta ul li div{position:relative; min-height:30px; padding:0 0 0 35px; line-height:1;}
+#cta ul li div i{position:absolute; top:0; left:0; width:25px; height:23px; font-size:20px; text-align:center;}
+#cta ul li div span{display:block;}
+#cta ul li div strong{display:block; margin:0 0 8px 0;}
+
+
+/* Footer
+--------------------------------------------------------------------------------------------------------------- */
+#footer{padding:80px 0;}
+#footer .heading{margin-bottom:50px; font-size:1.2rem;}
+#footer button{padding:8px 18px 10px; text-transform:uppercase; font-weight:700; cursor:pointer;}
+
+
+
+/* Transition Fade
+This gives a smooth transition to "ALL" elements used in the layout - other than the navigation form used in mobile devices
+If you don't want it to fade all elements, you have to list the ones you want to be faded individually
+Delete it completely to stop fading
+--------------------------------------------------------------------------------------------------------------- */
+*, *::before, *::after{transition:all .3s ease-in-out;}
+
+
+
+/* Back to Top */
+#backtotop{z-index:999; display:inline-block; position:fixed; visibility:hidden; bottom:20px; right:20px; width:36px; height:36px; line-height:36px; font-size:16px; text-align:center; opacity:.2;}
+#backtotop i{display:block; width:100%; height:100%; line-height:inherit;}
+#backtotop.visible{visibility:visible; opacity:.5;}
+#backtotop:hover{opacity:1;}
+
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body{color:#474747; background-color:#FFFFFF;}
+a{color:#53D3DE;}
+a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
+hr, .borderedbox{border-color:#D7D7D7;}
+label span{color:#FF0000; background-color:inherit;}
+input:focus, textarea:focus, *:required:focus{border-color:#53D3DE;}
+
+.overlay{color:#FFFFFF; background-color:inherit;}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+.overlay.gradient::before{background:linear-gradient(90deg,rgba(255,255,255,.6) 0%,transparent 100%);}
+.overlay.light{color:#474747;}
+.overlay.light::after{background-color:rgba(255,255,255,.7);}
+
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#53D3DE; border-color:#53D3DE;}
+.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+
+
+
+/* Rows */
+.row0{color:#474747; background-color:#F4F4F4;}
+.row1{color:#FFFFFF; background-color:#53D3DE; border-color:#1D8B94;}
+.row2{color:#474747; background-color:#F4F4F4;}
+.row3{color:#474747; background-color:#FFFFFF;}
+.row4{color:#9FA7AF; background-color:#202020;}
+.row5, .row5 a{color:#9FA7AF; background-color:#161616;}
+
+.coloured{color:#FFFFFF; background-color:#1D8B94;}
+
+
+
+/* Page Intro */
+#pageintro{color:#FFFFFF;}
+
+
+/* Content Area */
+.prices li article{background-color:#FFFFFF; border-color:rgba(0,0,0,.1);}
+.prices li article:hover, .prices li article:hover .btn, .prices .btn:hover{color:inherit; background-color:#FFFFFF; border-color:#53D3DE;}
+.prices li article p:last-of-type strong{color:#1D8B94;}
+
+.red{color:#B12E52;}
+.green{color:#00B900}
+.blue{color:#359AFF}
+
+
+/* CTA - Click to Action */
+#cta{border-color:#D7D7D7;}
+
+
+/* Footer */
+#footer .heading{color:#FFFFFF;}
+#footer button{color:#FFFFFF; background-color:#53D3DE;}
+
+
+#backtotop{color:#FFFFFF; background-color:#53D3DE;}
+
+
+/* Media Queries
+--------------------------------------------------------------------------------------------------------------- */
+@-ms-viewport{width:device-width;}
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:1140px){
+	.hoc{max-width:1140px;}
+}
+
+@media screen and (min-width:978px) and (max-width:1140px){
+	.hoc{max-width:95%;}
+}
+
+
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:978px){
+	.hoc{max-width:90%;}
+	#header{padding:30px 0;}
+
+}
+
+@media screen and (max-width:750px){
+	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+
+
+	#header{text-align:center;}
+
+	#pageintro article{max-width:none;}
+	#pageintro .heading{font-size:4rem;}
+
+	.sectiontitle, .testimonial article{max-width:none;}
+	.testimonial article{text-align:left;}
+
+	.cta > :first-child{margin-top:0; text-align:center;}
+
+	.prices li:nth-last-child(-n+3){margin-bottom:50px;}
+
+	#footer{padding-bottom:50px;}/* Not required, just looks a little better */
+}
+

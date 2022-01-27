@@ -1,0 +1,168 @@
+.creatornames{
+    text-align: center;
+    font-size: 35px;
+    margin-block: 15px;
+}
+
+p.sentence{
+    font-size: 17px;
+    color: white;
+}
+
+.bgded{
+    background-image: url(../../Icons/background-mask.jpg);
+    background-repeat: no-repeat;
+}
+
+.coronaimg{
+    width: 103px;
+}
+
+.prices li article i#register{
+    font-size: 13px;
+    margin-right: 4px;
+    margin-bottom: unset;
+    color: rgb(92, 83, 83);
+}
+.employees,.customer,.design,.order
+{
+    margin-top: 70px;
+}
+
+@media screen and (max-width: 978px){
+
+    .employees,.customer,.design,.order
+    {
+        margin-top: 20px;
+    }
+} 
+
+
+
+.counter
+{
+    background-color: #eaecf0;
+    text-align: center;
+}
+
+.counter-count
+{
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+    line-height: 40px;
+    width: 92px;
+    height: 40px;
+    margin-right: 45px;
+    display: inline-block;
+}
+
+.employee-p,.customer-p,.order-p,.design-p
+{
+    font-size: 22px;
+    color: #000000;
+    line-height: 30px;
+}
+
+.testimonial article em {
+    display: block;
+    margin-top: 5px;
+    font-size: 10px;
+    font-style: normal;
+}
+
+#total{
+    color: #53D3DE;
+}
+#active-case{
+    color: red;
+}
+#recovered{
+    color: green;
+}
+#death{
+    color: black;
+}
+
+iframe.graph{
+    margin-left: 210px;
+    margin-right: auto;
+    display: block;
+    height: 700px;
+}
+
+@media screen and (max-width: 978px){
+    iframe.graph{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+
+.counter .container {
+    padding: 40px 0;
+}
+
+.counter #worldcase {
+    border-bottom: 1px solid black;
+}
+
+/*registration page*/
+.registration-form{
+    width: auto;
+}
+
+
+
+
+select.select-options{
+    margin-left: 100px;
+    padding : 5px 8px;
+    background-color: #b5e5eb;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+select option{
+    margin: 10px;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.form-heading{
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.prices li article label{
+    margin: 15px 0 0 0;
+}
+
+#submit-btn{
+    margin-top: 50px;
+    background-color: unset;
+    color: black;
+    border: 1px solid black;
+
+}
+#submit-btn:hover{
+    background-color: #53D3DE;
+    color: black;
+}
+
+.container .search-bar{
+    width: 100%;
+    padding: 10px;
+    float: left;
+    border: #53D3DE 2px solid;
+    border-radius: 5px;
+}
+
+select.search-bar {
+   -webkit-appearance: none; 
+    background: url(../../Icons/search-icon.png) no-repeat right;
+    padding-right: 10px;
+}
+
+
+  

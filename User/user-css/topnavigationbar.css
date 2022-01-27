@@ -1,0 +1,111 @@
+@media screen and (min-width: 900px){
+.topnav {
+    background-color: #53D3DE;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 28px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+  }
+  
+  .topnav .logouticon{
+    float: right;
+  }
+  
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  .topnav a:hover{
+    text-decoration: none;
+  }
+  .topnav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    margin-bottom: 20px;
+  }
+  
+  .topnav a:hover:after {
+    width: 100%;
+    left: 0;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 20px 20px;
+      text-decoration: none;
+      font-size: 17px;
+  }
+
+    .topnav {
+        background-color: #53D3DE;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+      }
+
+    .topnav a:not(:first-child) 
+    {
+      display: none;
+    }
+    .topnav a.icon 
+    {
+      float: right;
+      display: block;
+    }
+    
+  }
+  
+/*mobile*/
+  @media screen and (max-width: 900px) 
+  {
+    
+    .topnav.responsive {
+      position: relative;
+    }
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+.topnav .icon{
+  background-color: #53D3DE;
+}
+
+.logouticon{
+  margin-right: 50px;
+}
+

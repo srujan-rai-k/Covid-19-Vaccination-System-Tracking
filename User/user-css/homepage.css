@@ -1,0 +1,244 @@
+
+.creatornames{
+    text-align: center;
+    font-size: 35px;
+    margin-block: 15px;
+}
+
+p.sentence{
+    font-size: 17px;
+    color: white;
+}
+
+.bgded{
+    background-image: url(../../Icons/background-mask.jpg);
+    background-repeat: no-repeat;
+}
+
+.coronaimg{
+    width: 103px;
+}
+
+.prices li article i#register{
+    font-size: 13px;
+    margin-right: 4px;
+    margin-bottom: unset;
+    color: rgb(92, 83, 83);
+}
+
+.sectiontitle .heading{
+    font-size: 30px;
+} 
+
+.counter
+{
+    background-color: #eaecf0;
+    text-align: center;
+}
+.employees,.customer,.design,.order
+{
+    margin-top: 70px;
+}
+.counter-count
+{
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+    line-height: 40px;
+    width: 92px;
+    height: 40px;
+    margin-right: 45px;
+    display: inline-block;
+}
+
+.employee-p,.customer-p,.order-p,.design-p
+{
+    font-size: 22px;
+    color: #000000;
+    line-height: 30px;
+}
+
+.testimonial article em {
+    display: block;
+    margin-top: 5px;
+    font-size: 10px;
+    font-style: normal;
+}
+
+#total{
+    color: #53D3DE;
+}
+#active-case{
+    color: red;
+}
+#recovered{
+    color: green;
+}
+#death{
+    color: black;
+}
+
+iframe.graph{
+    margin-left: 210px;
+    margin-right: auto;
+    display: block;
+    height: 700px;
+}
+
+@media screen and (max-width: 978px){
+    iframe.graph{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+.font-x1 {
+    font-size: 15px;
+}
+
+.counter .container {
+    padding: 40px 0;
+}
+
+.counter #worldcase {
+    border-bottom: 1px solid black;
+}
+
+/*registration page*/
+.registration-form{
+    width: auto;
+}
+
+
+.registration-form input[type=text],input[type=tel], input[type=number],input[type=password],input[type=date], textarea{  
+    width: 100%;  
+    padding: 15px;  
+    display: inline-block;  
+    border-radius: 15px;  
+    background-color: #b5e5eb; 
+}
+
+.registration-form label{
+    float: left;
+    margin-bottom: unset;
+}
+
+.prices li article select{
+    margin: 15px 10px 10px 10px;
+}
+
+
+select.select-options{
+    margin-left: 100px;
+    padding : 5px 8px;
+    background-color: #b5e5eb;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+select option{
+    margin: 10px;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.form-heading{
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.prices li article label{
+    margin: 15px 0 0 0;
+}
+
+#submit-btn{
+    margin-top: 50px;
+    background-color: unset;
+    color: black;
+    border: 1px solid black;
+
+}
+#submit-btn:hover{
+    background-color: #53D3DE;
+    color: black;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.container table>tbody>tr>th{
+    border-top: unset;
+    border-bottom: 1px solid bisque;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container table tr th:last-child{
+    font-size: 20px;
+    font-weight: normal;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 10%;
+}
+.container table tr th:first-child{
+    padding-left: 15%;
+}
+
+.container .safety-img{
+   width: 17%;
+   margin-bottom: 30px;
+}
+
+.container table tbody tr{
+    padding-top: 150px;
+}
+
+@media screen and (max-width: 978px){
+    .container h1{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .container .safety-img{
+        margin-bottom: 30px;
+     }
+     .container table tr th:last-child{
+        font-size: 15px;
+        font-weight: normal;
+        padding-top: 10%;
+        padding-left: 10px;
+    }
+    .container table tr th:first-child{
+        padding-left: unset;
+    }
+   
+}
+
+.safety-box{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#chartContainer{
+    width: 100%;
+    height: auto;
+}
+
+.container .search-bar{
+    width: 100%;
+    padding: 10px;
+    float: left;
+    border: #53D3DE 2px solid;
+    border-radius: 5px;
+}
+
+select.search-bar {
+   -webkit-appearance: none; 
+    background: url(../../Icons/search-icon.png) no-repeat right;
+    padding-right: 10px;
+}
+
