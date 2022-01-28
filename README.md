@@ -1,5 +1,6 @@
 
 Azure website link -- https://covid-vaccination.azurewebsites.net/User/index.php <br>
+Project Demo URL -- https://drive.google.com/file/d/1R5xt7P9IKWfLYVJc91cPYzPVEQlocxLN/view?usp=sharing <br>
 Admin username <b>DBMSProject</b> <br>
 Admin password <b>DBMSProject</b>
 
